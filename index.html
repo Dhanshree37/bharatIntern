@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <div class="input-container">
+            <label for="celsius">Celsius</label>
+            <input type="number" onkeydown="return isValidKey(event)" id="celsius" placeholder="Enter Celsius temperature">
+        </div>
+        <div class="input-container">
+            <label for="fahrenheit">Fahrenheit</label>
+            <input type="number" onkeydown="return isValidKey(event)" id="fahrenheit" placeholder="Enter Fahrenheit temperature">
+        </div>
+        <div class="input-container">
+            <label for="kelvin">Kelvin</label>
+            <input type="number" onkeydown="return isValidKey(event)" id="kelvin" placeholder="Enter Kelvin temperature">
+        </div>
+        <div class="input-container">
+            <label for="rankine">Rankine</label>
+            <input type="number" onkeydown="return isValidKey(event)" id="rankine" placeholder="Enter Rankine temperature">
+        </div>
+    
+        <div class="input-container">
+            <label for="reaumur">Reaumur</label>
+            <input type="number" onkeydown="return isValidKey(event)" id="reaumur" placeholder="Enter Reaumur temperature">
+        </div>
+        <div class="button-container">
+            <button onclick="convertTemperature()">Convert</button>
+        </div>
+        <div class="clearButton">
+        <button id="clearButton">Clear</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
